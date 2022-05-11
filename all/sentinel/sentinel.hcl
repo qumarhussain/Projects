@@ -13,6 +13,11 @@ policy "require-private-acl-for-s3-buckets" {
   enforcement_level = "soft-mandatory"
 }
 
+policy "restrict-db-instance-brp" {
+  source            = "https://raw.githubusercontent.com/qumarhussain/sentinel/main/RDS/restrict-db-instance-brp.sentinel"
+  enforcement_level = "soft-mandatory"
+}
+
 module "tfplan-functions" {
   source = "https://raw.githubusercontent.com/hashicorp/terraform-guides/master/governance/third-generation/common-functions/tfplan-functions/tfplan-functions.sentinel"
 }
