@@ -1,0 +1,6 @@
+bucketName              = "s3-qumarhussain-cms"
+acl                     = "private"
+projectName             = "ProjectC"
+env                     = "TEST"
+amiID 					= "ami-0d37e07bd4ff37148"
+instanceType 		    = "t2.small"
